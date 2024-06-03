@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xarpes-feedstoc
 
 Home: https://xarpes.github.io
 
-Package license: GPL-2.0-only
+Package license: GPL-3.0-only
 
 Summary: Extraction from angle resolved photoemission spectra
 

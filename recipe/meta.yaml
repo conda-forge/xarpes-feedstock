@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - flit-core >=3.4
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
     - igor2
     - jupyterlab
     - jupytext
@@ -28,6 +28,8 @@ requirements:
     - numpy
     - scipy
     - lmfit
+    - xarray
+    - pyqt5
 
 test:
   imports:

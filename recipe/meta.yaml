@@ -29,7 +29,7 @@ requirements:
     - scipy
     - lmfit
     - xarray
-    - pyqt5
+    - pyqt
 
 test:
   imports:

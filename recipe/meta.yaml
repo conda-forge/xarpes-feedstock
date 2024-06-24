@@ -1,5 +1,5 @@
 {% set name = "xarpes" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df2db6162e9d3f2c4db1fd0625f78b2b3f973b8abf1401ba898c1575f53c617c
+  sha256: beefeeb9c6486097a961ec7cb5e1c8e64cd661e3db0f9ed7bdc9756873f7983b
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - flit-core >=3.4
     - pip
   run:
-    - python >=3.5
+    - python >=3.7
     - igor2
     - jupyterlab
     - jupytext
@@ -28,6 +28,8 @@ requirements:
     - numpy
     - scipy
     - lmfit
+    - xarray
+    - pyqt
 
 test:
   imports:

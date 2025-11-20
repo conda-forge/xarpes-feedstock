@@ -1,5 +1,6 @@
 {% set name = "xarpes" %}
 {% set version = "0.3.0" %}
+{% set python_min = "3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -20,16 +21,16 @@ requirements:
     - flit-core >=3.4
     - pip
   run:
-    - python >={{ python_min }}
-    - igor2
+    - python >= {{ python_min }}
+    - igor2 >=0.5.8
     - jupyterlab
     - jupytext
     - matplotlib-base
     - numpy
     - scipy
     - lmfit
-    - xarray
     - pyqt
+    - ipympl
 
 test:
   imports:

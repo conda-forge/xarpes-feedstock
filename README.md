@@ -3,7 +3,7 @@ About xarpes-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xarpes-feedstock/blob/main/LICENSE.txt)
 
-Home: https://xarpes.github.io
+Home: https://xarpes.readthedocs.io
 
 Package license: GPL-3.0-only
 

@@ -43,7 +43,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://xarpes.github.io
+  home: https://xarpes.readthedocs.io
   summary: Extraction from angle resolved photoemission spectra
   license: GPL-3.0-only
   license_file: LICENSE

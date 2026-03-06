@@ -1,5 +1,5 @@
 {% set name = "xarpes" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.8" %}
 {% set python_min = "3.7" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32926a3fc038d4972fee42e68b327ff3f9247634286232b2e7dadf1cf4a00adf
+  sha256: dd59e903917ef0a941ca6ae1f2721e74896a6b4e825807a625fcaec60ca39547
 
 build:
   noarch: python

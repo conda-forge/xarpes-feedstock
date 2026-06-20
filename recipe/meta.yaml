@@ -1,6 +1,7 @@
 {% set name = "xarpes" %}
 {% set version = "1.0.2" %}
 {% set python_min = "3.9" %}
+{% set python_max = "3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +22,7 @@ requirements:
     - flit-core >=3.4
     - pip
   run:
-    - python >={{ python_min }},<3.14
+    - python >={{ python_min }},<{{ python_max }}
     - igor2 >=0.5.8
     - jupyterlab
     - jupytext

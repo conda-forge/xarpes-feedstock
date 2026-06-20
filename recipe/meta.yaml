@@ -1,6 +1,7 @@
 {% set name = "xarpes" %}
-{% set version = "1.0.1" %}
-{% set python_min = "3.7" %}
+{% set version = "1.0.2" %}
+{% set python_min = "3.9" %}
+{% set python_max = "3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d744d71f65f1dd2e531bc1a6370267c10c41d56c5653bc96bfdccb17fb31f06a
+  sha256: c35167387ccadc02c1d3017d55daf01e72721503df285326e26273aa690de8cb
 
 build:
   noarch: python
@@ -21,7 +22,7 @@ requirements:
     - flit-core >=3.4
     - pip
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<{{ python_max }}
     - igor2 >=0.5.8
     - jupyterlab
     - jupytext
